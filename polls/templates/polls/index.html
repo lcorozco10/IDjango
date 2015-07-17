@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Example Template</title>
-</head>
-<body>
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
 
 {% if latest_question_list %}
     <ul>
@@ -16,5 +12,3 @@
     <p>No polls are available.</p>
 {% endif %}
 
-</body>
-</html>
